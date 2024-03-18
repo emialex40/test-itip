@@ -100,4 +100,6 @@ class Itip_Image_Hover_Public {
 
 	}
 
+
+
 }
