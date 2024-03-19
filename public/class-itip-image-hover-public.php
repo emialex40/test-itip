@@ -134,6 +134,10 @@ class Itip_Image_Hover_Public
 
             $html .= '<div class="swiper-pagination"></div>';
             $html .= '</div>';
+        } else {
+            $html = '<div class="swiper-content">';
+            $html .= '<img src="'. $imageUrl .'" alt="Slide 1">';
+            $html .= '</div>';
         }
 
 

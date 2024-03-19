@@ -20,17 +20,22 @@
  * @subpackage Itip_Image_Hover/includes
  * @author     Alex Yemeliantsev <26emic73@gmail.com>
  */
-class Itip_Image_Hover_Deactivator {
+class Itip_Image_Hover_Deactivator
+{
 
-	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
-	 * @since    1.0.0
-	 */
-	public static function deactivate() {
-
-	}
+    /**
+     * Short Description. (use period)
+     *
+     * Long Description.
+     *
+     * @since    1.0.0
+     */
+    public static function deactivate()
+    {
+        acf_update_field([
+            'key'    => 'field_product_cropper_image',
+            'active' => false,
+        ]);
+    }
 
 }
