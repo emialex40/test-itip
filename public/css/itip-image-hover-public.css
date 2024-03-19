@@ -1,4 +1,42 @@
-/**
- * All of the CSS for your public-facing functionality should be
- * included in this file.
- */
+.woocommerce ul.products li.product .astra-shop-thumbnail-wrap,
+.woocommerce-page ul.products li.product .astra-shop-thumbnail-wrap {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: .8em;
+    position: relative;
+}
+
+.woocommerce-js ul.products li.product .woocommerce-loop-product__link,
+.woocommerce-page ul.products li.product .woocommerce-loop-product__link {
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.woocommerce ul.products li.product a .swiper-slide {
+    height: auto;
+}
+
+.woocommerce ul.products li.product a .swiper-content {
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.woocommerce ul.products li.product a .swiper-slide {
+    height: auto;
+}
+
+.woocommerce ul.products li.product a .swiper-pagination.swiper-pagination-bullets {
+    position: relative;
+    bottom: auto;
+}
+
+.woocommerce ul.products li.product a .swiper-pagination-bullet-active {
+    background: #3a3a3a;
+}

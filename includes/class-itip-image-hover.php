@@ -172,8 +172,11 @@ class Itip_Image_Hover {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+        $this->loader->add_action( 'init', $plugin_public, 'remove_woocommerce_template_loop_product_thumbnail' );
+        $this->loader->add_action( 'woocommerce_before_shop_loop_item_title', $plugin_public, 'add_custom_template_loop_product_thumbnail', 10 );
 
-	}
+    }
+
 
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
